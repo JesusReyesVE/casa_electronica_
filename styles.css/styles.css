@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.header{
+    background-color: #0f172a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logoContenedor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.logoContenedor h1{
+    font-size: 1.4rem;
+}
+
+.accionesHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.botonMenu,
+.botonCarrito{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+.hero{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(to bottom, #dbeafe, #ffffff);
+}
+
+.heroTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero h2{
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #0f172a;
+}
+
+.heroTexto p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #334155;
+}
+
+.botonHero{
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.botonSecundario{
+    background-color: transparent;
+    border: 2px solid #2563eb;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.heroImagen img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+
+.productos{
+    padding: 30px 15px;
+}
+
+
+.contenedorProductos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardProducto{
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex; flex-direction: column;
+    gap: 12px;
+}
+
+.imagenProducto{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.cardProducto h3{
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.precioActual{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.precioAnterior{
+    font-size: 1rem;
+    color: #6b7280;
+    text-decoration: line-through;
+}
+
+.botonProducto{
+    background-color: #0f172a;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
+
+.beneficios {
+    padding: 30px 15px;
+    background-color: #ffffff;
+}
+
+.tituloSeccion{
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedorBeneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beneficio {
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.icono {
+    font-size: 2rem;
+}
+
+.beneficio h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+}
+
+.beneficio p {
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+
+
+.footer {
+    background-color: #0f172a;
+    color: white;
+    margin-top: 30px;
+}
+
+.footerContenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 15px;
+}
+
+.footerMarca h2,
+.footerLinks h3,
+.footerContacto h3 {
+    margin-bottom: 10px;
+}
+
+.footerMarca p {
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.footerLinks ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerLinks a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.footerContacto p {
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}   
+
+.footerCopy {
+    border-top: 1px solid #334155;
+    text-align: center;
+    padding: 15px;
+}
+
+.footerCopy p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+
+
+@media (min-width:768px ){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 100px;
+    }
+    .logoContenedor h1{
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+
+    .botonCarrito:hover,
+    .botonMenu:hover{
+        background-color: #0f172a;
+        border: solid 1px black;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .heroTexto {
+        flex: 1;
+    }
+
+    .heroImagen{
+        flex: 1;
+    }
+
+    .botonSecundario{
+    background-color: transparent;
+    border: 2px solid #2563eb;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+    .contenedorProductos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .botonProducto,
+    .botonHero,
+    .botonCarrito, .botonMenu{
+        background-color: #4f15a5;
+    }
+    
+    .contenedorBeneficios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footerContenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+.navBar {
+    display: none;
+    }
+
+
+
+@media (min-width:1024px){
+    .navBar{
+        display: block;
+        padding: 20px;
+    }
+
+    .accionesHeader{
+        display: none;
+    }
+
+    .navBar ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .navBar a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .navBar a:active{
+        color: #60a5fa;
+    }
+
+    .hero{
+        padding: 80px 60px;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .heroTexto{
+        max-width: 500px;
+    }
+
+    .hero h2{
+        font-size: 3rem;
+    }
+
+    .heroTexto p{
+        font-size: 1.2rem;
+    }
+
+
+    .heroBotones{
+        display: flex;
+        flex-direction:row;
+        gap: 15px;
+    }
+
+    .botonSecundario{
+        background-color: transparent;
+        border: 2px solid #2563eb;
+        color: #2563eb;
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .botonHero{
+        background-color: #0f172a;
+    }
+
+    .botonHero,
+    .botonSecundario{
+        padding: 14px 28px;
+    }
+
+    .heroImagen img{
+        max-width: 550px;
+    }
+
+    .contenedorProductos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .cardProducto h3{
+        text-align: center;
+    }
+
+    .precioActual,
+    .precioAnterior,
+    .botonProducto{
+        text-align: center;
+    }
+
+    .botonProducto {
+        background-color: #0f172a;
+    }
+
+}
