@@ -7,153 +7,218 @@
     <link rel="stylesheet" href="./styles.css/styles.css">
 </head>
 <body>
+    <div class="container">
     <header class="header">
-        <div class="logoContenedor">
-            <img class="logo" src="./imagenes/logo.png" alt="logo casa electronica">
-            <h1>Casa Electronica</h1>
-        </div>
-
-        <nav class="navBar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Celulares</a></li>
-                <li><a href="#">Heladeras</a></li>
-                <li><a href="#">Notebooks</a></li>
-                <li><a href="#">Registro</a></li>
-            </ul>
-        </nav>
-
-        <div class="accionesHeader">
-            <button class="botonMenu">Menú</button>
-            <button class="botonCarrito">Carrito</button>
-        </div>
-    </header>
-
-
-
-    <main>
-        <section class="hero">
-            <div class="heroTexto">
-                <h2>Las mejores ofertas en tecnología para tu hogar</h2>
-        
-            <p>Encontrá celulares, heladeras, lavarropas y mucho más al mejor precio.</p>
-            <div class="heroBotones">
-            <a class="botonHero" href="#">Ver ofertas</a>
-            <a class="botonSecundario" href="#">Ver productos</a>
+        <div class="encabezadoContenedor">
+            <div class="logoContenedor">
+            <img class="imagenLogo" src="./imagenes/logo.png" alt="logo de pagina">
+            <h1 class="tituloLogo">Casa Electronica</h1>
             </div>
 
+            <nav class="navBar">
+                <div class="navBotones">
+                    <a href="#" class="botonMenu">Menu</a>
+                    <a href="#" class="botonCarrito">Carrito</a>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="navBarDesktop">
+            <div class="logoDesktop">
+                <img src="./imagenes/logo.png" alt="logo casa electronica" class="imagenLogoDesktop">
+                <h1 class="tituloLogoDesktop">Casa Electronica</h1>
+            </div>
+
+            <div class="menuDesktop">
+            <ul>
+                <li><a>Celulares</a></li>
+                <li><a>Heladeras</a></li>
+                <li><a>Notebooks</a></li>
+                <li><a>Registro</a></li>
+            </ul>
+            </div>
+
+            <div>
+                <button class="botonDesktop">Carrito</button>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="sidebarDerecho">
+        <div>
+        <h3>Ofertas rápidas</h3>
+        <p>Envíos gratis</p>
+        <p>12 cuotas sin interés</p>
+        <p>Garantía oficial</p>
+        </div>
+    </aside>
+
+
+
+    <main class="main">
+        <section class="hero">
+            <div class="heroTexto">
+                <p class="heroEtiqueta">Tecnología para tu hogar</p>
+                <h2 class="heroTitulo">Las mejores ofertas en electrodomesticos</h2>
+                <p class="heroParrafo">Descubrí celulares, heladeras, notebooks y mucho más con precios accesibles y productos de calidad.</p>
+            </div>
+
+            <div class="heroBotones">
+                <a href="#" class="heroBotonPrincipal"> Comprar ahora</a>
+                <a href="#" class="heroBotonSecundario">Ver productos</a>
             </div>
 
             <div class="heroImagen">
-                <img src="./imagenes/heroimagen.png" alt="Productos tecnológicos destacados">
+                <img src="./imagenes/heroimagen.png" alt="hero imagen">
             </div>
         </section>
-        
 
-        <section class="productos">
-            <h2 class="tituloSeccion">Productos destacados</h2>
 
-            <div class="contenedorProductos">
-                <article class="cardProducto">
-                    <img class="imagenProducto" src="./imagenes/samsungheladera.png" alt="Heladera Samsung">
-                    <h3>Oferta</h3>
-                    <p class="precioActual">$850.000</p>
-                    <p class="precioAnterior">$990.000</p>
-                    <a href="#" class="botonProducto">Comprar</a>
-                </article>
 
-                <article class="cardProducto">
-                    <img class="imagenProducto" src="./imagenes/lgheladera.png" alt="Heladera Lg">
-                    <h3>Oferta</h3>
-                    <p class="precioActual">$850.000</p>
-                    <p class="precioAnterior">$990.000</p>
-                    <a href="#" class="botonProducto">Comprar</a>
-                </article>
 
-                <article class="cardProducto">
-                    <img class="imagenProducto" src="./imagenes/lavarropatres.png" alt="Lavarropa Samsung">
-                    <h3>Oferta</h3>
-                    <p class="precioActual">$850.000</p>
-                    <p class="precioAnterior">$990.000</p>
-                    <a href="#" class="botonProducto">Comprar</a>
-                </article>
+        <section class="principal">
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/lavarropados.png" alt="lavarropas samsung">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
 
-                <article class="cardProducto">
-                    <img class="imagenProducto" src="./imagenes/lavarropados.png" alt="lavarropas x">
-                    <h3>Oferta</h3>
-                    <p class="precioActual">$850.000</p>
-                    <p class="precioAnterior">$990.000</p>
-                    <a href="#" class="botonProducto">Comprar</a>
-                </article>
+            </div>
+
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/lavarropatres.png" alt="LG lavarropas">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
+
+            </div>
+
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/lgheladera.png" alt="Lg heladera">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
+
+            </div>
+
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/samsungheladera.png" alt="samsung heladera">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
+
+            </div>
+
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/notebookdos.png" alt="notebook">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
+
+            </div>
+
+            <div class="cards">
+                <img class="cardsImagen" src="./imagenes/notebookuno.png" alt="samsung notebook">
+                <h3 class="cardsTitulo">Oferta</h3>
+                <span class="precioViejo">Precio viejo</span>
+                <span class="precioNuevo">Precio nuevo</span>
+                <a href="#" class="botonCard">Ver oferta</a>
             </div>
         </section>
+
 
 
         <section class="beneficios">
-            <h2 class="tituloSeccion">¿Por qué elegirnos?</h2>
 
-        <div class="contenedorBeneficios">
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">💳 Pago Fácil</h3>
+                <p class="beneficioDescripcion"> Compra en cuotas y con múltiples medios de pago.</p>
+            </div>
 
-        <div class="beneficio">
-            <span class="icono">🚚</span>
-            <h3>Envío a domicilio</h3>
-            <p>Recibí tu producto sin moverte de casa.</p>
-        </div>
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">🚚 Envío Rápido</h3>
+                <p class="beneficioDescripcion">Recibí tu producto en tiempo récord.</p>
+            </div>
 
-        <div class="beneficio">
-            <span class="icono">⚡</span>
-            <h3>Entrega inmediata</h3>
-            <p>Productos disponibles para entrega rápida.</p>
-        </div>
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">🛡️ Garantía Oficial</h3>
+                <p class="beneficioDescripcion">Todos los productos con respaldo de fábrica.</p>
+            </div>
 
-        <div class="beneficio">
-            <span class="icono">💳</span>
-            <h3>Cuotas sin interés</h3>
-            <p>Pagá en cuotas sin recargo.</p>
-        </div>
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">💰 Mejores Precios</h3>
+                <p class="beneficioDescripcion">Ofertas competitivas todo el año.</p>
+            </div>
 
-        <div class="beneficio">
-            <span class="icono">🏷️</span>
-            <h3>Ofertas al contado</h3>
-            <p>Descuentos exclusivos pagando en efectivo.</p>
-        </div>
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">📞 Atención Personalizada</h3>
+                <p class="beneficioDescripcion">Te asesoramos antes y después de tu compra.</p>
+            </div>
 
-        </div>
+            <div class="cardsBeneficios">
+                <h3 class="beneficioTitulos">🛠️ Servicio técnico garantizado</h3>
+                <p class="beneficioDescripcion">Ofrecemos asistencia técnica confiable para todos nuestros productos, brindándote tranquilidad antes y después de tu compra.</p>
+            </div>
         </section>
-
     </main>
-    
+
+
+    <aside class="sidebarIzquierdo">
+        <h3>Categorías</h3>
+        <ul>
+            <li>Celulares</li>
+            <li>Heladeras</li>
+            <li>Notebooks</li>
+            <li>Lavarropas</li>
+        </ul>
+    </aside>
+
+
     <footer class="footer">
-        <div class="footerContenedor">
-
-        <div class="footerMarca">
-            <h2>Casa Electrónica</h2>
-            <p>Tu tienda de tecnología y electrodomésticos para el hogar.</p>
-        </div>
-
-        <div class="footerLinks">
-            <h3>Enlaces útiles</h3>
+    <div class="footerContenedor">
+        <div class="footerCards">
+            <h3 class="footerTitulos">Redes Sociales</h3>
             <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contacto</a></li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>WhatSapp</li>
             </ul>
         </div>
 
-        <div class="footerContacto">
-            <h3>Contacto</h3>
-            <p>Email: contacto@casaelectronica.com</p>
-            <p>Tel: +54 11 1234 5678</p>
-            <p>Lomas de Zamora, Argentina</p>
+        <div class="footerCards">
+            <h3 class="footerTitulos">Empresa</h3>
+            <ul>
+                <li>Trabaja con nosotros</li>
+                <li>Manuales</li>
+                <li>Reclamos</li>
+                <li>Registro</li>
+            </ul>
         </div>
 
+        <div class="footerCards">
+            <h3 class="footerTitulos">Sucursales</h3>
+            <ul>
+                <li>Palermo</li>
+                <li>Quilmes</li>
+                <li>Cordoba</li>
+            </ul>
         </div>
+    </div>
 
-        <div class="footerCopy">
-        <p>© 2026 Casa Electrónica. Todos los derechos reservados.</p>
-        </div>
+    <div class="footerBottom">
+    <p>© 2026 Casa Electrónica - Todos los derechos reservados</p>
+    </div>
     </footer>
+    </div>
 
 </body>
+
+
+
+
 </html>
