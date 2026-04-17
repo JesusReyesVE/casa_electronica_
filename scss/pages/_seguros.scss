@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.insurance-plans {
+  @include container;
+  padding: 3rem 0;
+}
+
+.insurance-plans__grid {
+  margin-top: 1rem;
+}

@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.btn-primary-custom {
+  @include button-base;
+  background-color: $color-primary;
+  color: $color-surface;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary-custom {
+  @include button-base;
+  background-color: transparent;
+  border-color: $color-primary;
+  color: $color-text;
+
+  &:hover {
+    background-color: rgba(217, 170, 114, 0.12);
+  }
+}

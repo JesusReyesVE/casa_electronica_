@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.products {
+  @include container;
+  padding: 3rem 0;
+}
+
+.products__grid {
+  margin-top: 1rem;
+}

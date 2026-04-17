@@ -1,0 +1,80 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+  }
+
+  &__brand-text {
+    display: flex;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    &--accent {
+      color: $color-primary;
+      font-weight: 400;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .site-header {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__menu {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  }
+}

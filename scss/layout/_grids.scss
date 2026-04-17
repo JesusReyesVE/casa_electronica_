@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.categories__grid,
+.products__grid,
+.insurance-plans__grid,
+.info-grid,
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.categories__grid,
+.products__grid,
+.insurance-plans__grid,
+.info-grid,
+.testimonials-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: $bp-tablet) {
+  .categories__grid,
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__grid,
+  .insurance-plans__grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .categories__grid,
+  .info-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .insurance-plans__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

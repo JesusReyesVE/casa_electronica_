@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.register-form {
+  @include card-base;
+  padding: 2rem;
+  background-color: $color-surface;
+
+  label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
+    color: $color-text;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    border: 1px solid $color-border;
+    border-radius: $radius-sm;
+    padding: 0.95rem 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:focus {
+      border-color: $color-primary;
+      box-shadow: 0 0 0 3px rgba(217, 170, 114, 0.18);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .check-field {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 400;
+
+    input {
+      width: auto;
+    }
+  }
+}

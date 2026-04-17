@@ -1,0 +1,145 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends";
+
+.category-card,
+.product-card,
+.info-card,
+.testimonial-card,
+.insurance-card {
+  @include card-base;
+  @extend %hover-lift;
+}
+
+.category-card {
+  padding: 1.5rem 1rem;
+  text-align: center;
+
+  img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    display: inline-block;
+    background-color: $color-primary;
+    color: $color-surface;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}
+
+.product-card {
+  padding: 1rem;
+
+  &__image {
+    background-color: #f1efed;
+    border-radius: $radius-sm;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    min-height: 210px;
+    display: grid;
+    place-items: center;
+  }
+
+  h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 0.6rem;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $color-text;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-surface;
+    padding: 0.85rem 1rem;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}
+
+.info-card,
+.testimonial-card,
+.insurance-card {
+  padding: 1.5rem;
+}
+
+.info-card,
+.testimonial-card {
+  text-align: center;
+}
+
+.testimonial-card {
+  p {
+    margin-bottom: 0.9rem;
+    font-style: italic;
+  }
+
+  h3 {
+    color: $color-primary-dark;
+  }
+}
+
+.insurance-card {
+  h2 {
+    margin-bottom: 0.7rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    list-style: disc;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    color: $color-text-soft;
+  }
+
+  a {
+    display: inline-block;
+    background-color: $color-primary;
+    color: $color-surface;
+    padding: 0.85rem 1.3rem;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}

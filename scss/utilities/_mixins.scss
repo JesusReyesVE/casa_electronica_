@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+@mixin container {
+  width: min(90%, $container-width);
+  margin-inline: auto;
+}
+
+@mixin button-base {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: $radius-sm;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+@mixin card-base {
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  box-shadow: $shadow-soft;
+}
+
+@mixin section-space {
+  padding: 2.8rem 0;
+}
+
+@mixin title-section {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 1rem;
+}
